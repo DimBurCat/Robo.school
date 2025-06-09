@@ -1,0 +1,145 @@
+.main__aboutSchool {
+    display: flex;
+    justify-content: center;
+    background: var(--white-color);
+    padding-top: 120px;
+    width: 100%;
+}
+
+.main__aboutSchool-main-container {
+    margin-bottom: 40px;
+}
+
+.main__aboutSchool-purpose {
+    font-family: 'Jost';
+    font-size: 30px;
+    width: 800px;
+    height: 145px;
+    line-height: 160%;
+    margin: 0;
+}
+
+.main__aboutSchool-accomplishments-list {
+    display: grid;
+    grid-template: auto / repeat(4, 260px);
+    justify-content: center;
+    list-style: none;
+    margin-top: 70px;
+    padding: 0;
+    column-gap: 100px;
+}
+
+.main__aboutSchool-accomplishments-item__amount {
+    font-family: 'Jost';
+    font-size: 70px;
+    line-height: 160%;
+    color: var(--red-color);
+    margin: 0 0 20px;
+}
+
+.main__aboutSchool-accomplishments-item__thing { 
+    font-family: 'Jost';
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--dark-puple-color);
+    width: 260px;
+}
+
+.visiters-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    left: 20px;
+    bottom: 80px;
+    width: 235px;
+    height: 80px;
+    background: var(--dark-puple-color);
+    border: 3px solid var(--white-color);
+    border-radius: 100px;
+    z-index: 999; 
+    font-family: 'Jost';
+    font-size: 25px;
+    line-height: 160%;
+    color: var(--white-color);
+}
+
+.button-moveUp {
+    opacity: 0;
+    box-sizing: border-box;
+    position: fixed;
+    right: 40px;
+    bottom: 80px;
+    width: 120px;
+    height: 120px;
+    background: var(--dark-puple-color);
+    border: 3px solid var(--white-color);
+    border-radius: 100px;
+    transition-duration: 500ms;
+}
+
+
+@media (max-width: 1500px) {
+    .main__aboutSchool-accomplishments-list {  
+        column-gap: 54px;
+    }
+}
+
+@media (max-width: 1220px) {
+
+    .main__aboutSchool {
+        text-align: center;
+    }
+
+    .main__aboutSchool-purpose {   
+        width: 460px;
+        height: 240px;
+        margin: 0 auto;
+    }
+
+    .main__aboutSchool-accomplishments-item__thing {
+        margin: 0 auto;
+    }
+
+    .main__aboutSchool-accomplishments-list {  
+        column-gap: 54px;
+        grid-template: repeat(2, 230px) / repeat(2, 315px); 
+    }
+
+}
+
+@media (max-width: 690px) {
+    
+    .main__aboutSchool-accomplishments-list {  
+        column-gap: 15px;
+        grid-template: repeat(2, 230px) / repeat(2, 250px);
+    }
+}
+
+@media (max-width: 530px) {
+
+    .main__aboutSchool {
+        padding-top: 60px;
+    }
+
+    .main__aboutSchool-purpose {
+        width: 300px;
+        height: 160px;
+        font-size: 20px;
+    }
+
+    .main__aboutSchool-accomplishments-list {  
+        grid-template: repeat(4, 140px) / 270px;
+        row-gap: 30px;
+    }
+
+    .main__aboutSchool-accomplishments-item__amount {
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .main__aboutSchool-accomplishments-item__thing {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,141 @@
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background: rgba(20, 16, 36, 1);
+    border-bottom: 1px solid var(--light-puple-color);
+}
+
+.UpperHeader {
+    display: flex;
+    height: 108px;
+    background: rgba(20, 16, 36, 1);
+    padding: 5px 100px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-puple-color);
+    box-sizing: border-box;
+}
+
+.logo {
+    align-items: center;
+    width: 228px;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.header__mainNav-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 324px;
+    padding: 0;
+    color: var(--white-color);
+}
+
+.header__addNav-panel {
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+    height: 105px;
+}
+
+.header__Nav-item {
+    font-family: 'Jost';
+    font-size: 20px;
+    line-height: 160%;
+    transition-duration: 100ms;    
+}
+
+
+.header__tel-number {
+    font-family: 'Jost';
+    color: var(--white-color);
+    font-size: 30px;
+}
+
+.header__tel-number-container {
+    display: flex;
+    align-items: center;
+}
+
+.header__mainNav-buttons {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 155px;
+}
+
+.header__mainNav-menu {
+    position: absolute;
+    display: none;
+    width: 505px;
+    height: 568px;
+    right: 0;
+    top: 0px;
+    background: var(--dark-puple-color);
+    z-index: 999;
+    transition-duration: 500ms;
+    transform: translateX(100%);
+}
+
+.header__call-button, .header__mainNav-button, .header__mainNav-button-close{
+        box-sizing: border-box;
+        background: var(--header-button-color);
+        border: solid 1px var(--header-button-border-color);
+        border-radius: 10px;
+        width: 66px;
+        height: 66px;
+        transition-duration: 100ms;
+    }
+
+@media (max-width: 1290px) {
+    .header__mainNav-panel, .header__tel-number-container, .header__addNav-panel{
+        display: none;
+    }
+
+    .UpperHeader {
+        height: 98px;
+        padding: 5px 30px 0 50px;
+    }
+    
+    .header__mainNav-buttons {
+        display: flex;
+    }
+}
+
+@media (max-width: 530px) {
+    .UpperHeader {
+        height: 61px;
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .header__call-button, .header__mainNav-button {
+        width: 44px;
+        height: 44px; 
+    }
+
+    .header__call-button-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__mainNav-button-icon {
+        width: 26px;
+        height: 12px;
+    }
+
+    .header__mainNav-buttons {
+        width: 108px;
+    }
+}
+

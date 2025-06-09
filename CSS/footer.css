@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    background: var(--dark-puple-color);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.footer-container__logo-text, tel{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 160%;
+    color: var(--white-color);
+}
+
+.footer-container__text-copyright {
+    color: var(--header-button-border-color)
+}
+
+.footer-container__logo-text, .footer-container__text-copyright, tel, .footer-container__TG-text{
+  font-family: 'Jost';  
+}
+
+@media (max-width: 560px) {
+
+    footer {
+        height: 260px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

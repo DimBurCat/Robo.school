@@ -1,0 +1,41 @@
+@import url("fonts.css");
+@import url("colors.css");
+@import url("header.css");
+@import url("effects.css");
+@import url("header.css");
+@import url("main__toRequire.css");
+@import url("main__aboutSchool.css");
+@import url("main__benefitOfCourse.css");
+@import url("main__traners.css");
+@import url("main__form.css");
+@import url("main__news.css");
+@import url("main__events.css");
+@import url("main__tarifr.css");
+@import url("main__reviews.css");
+@import url("footer.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.flexed {
+    display: flex;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.text-bold-weight {
+    font-weight: 700;
+}
+
+.text-regular-weight {
+    font-weight: 400;
+}
+

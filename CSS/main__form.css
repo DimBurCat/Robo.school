@@ -1,0 +1,112 @@
+.main__form {
+    display: flex;
+    justify-content: center;
+    height: 560px;
+    background: var(--red-color);
+    background-image: url(../IMG/Group_319.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.main__form-container {
+    display: flex;
+    align-items: center;
+    column-gap: 112px;
+}
+
+.main__form-container__attaction-title {
+    width: 450px;
+    font-size: 36px; 
+}
+
+.main__form-container__attaction-text, .main__form-container__attaction-title {
+    color: var(--white-color);
+    font-family: 'Jost';
+    line-height: 130%;
+}
+
+.main__form-container__attaction-text {
+    font-size: 20px;
+}
+
+.main__form-container__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 500px;
+}
+
+.main__form-container__input, .main__form-container__textarea{
+    font-family: 'Jost';
+    font-size: 18px;
+    background: var(--white-color);
+    border-radius: 5px;
+    border: 0;
+    padding-left: 10px;
+}
+
+.main__form-container__input {
+    height: 64px;
+}
+
+.main__form-container__textarea {
+    height: 130px;
+    resize: none;
+}
+
+.main__form-container__button {
+    font-family: 'Jost';
+    background: var(--dark-puple-color);
+    border-radius: 5px;
+    border: 0;
+    color: var(--white-color);
+    height: 64px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 1250px) {
+    .main__form-container {
+        column-gap: 50px;
+    }
+
+    .main__form-container__input {
+        width: 305px;
+
+        padding-left: 10px;
+    }
+
+    .main__form-container__button {
+        width: 317px;
+    }
+
+    .main__form-container__attaction-text, .main__form-container__attaction-title{
+        width: 350px;
+    }
+
+    .main__form-container__form {
+        width: auto;
+    }
+}
+
+@media (max-width: 730px) {
+    .main__form-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .main__form {
+        height: 790px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main__form-container__attaction-text, .main__form-container__attaction-title {    
+        width: 250px;
+        text-align: center;
+    }
+
+    .main__form {
+        height: 870px;
+    }
+}

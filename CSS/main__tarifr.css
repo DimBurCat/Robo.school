@@ -1,0 +1,49 @@
+.main__tarifr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__tarifr-title {
+    font-family: 'Jost';
+    font-size: 40px;
+    line-height: 160%;
+    margin: 50px 0 70px 0;
+    color: var(--dark-puple-color);
+}
+
+.main__tarifr-cards-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.main__tarifr-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: var(--white-color);
+    background: var(--dark-puple-color);
+    border-radius: 20px;
+    width: 360px;
+    height: 460px;
+    font-family: 'Jost';
+    row-gap: 20px;
+}
+
+.main__tarifr-card-text {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+    
+    .text-bg {
+        font-size: 50px;
+    }
+}
+
+.main__tarifr-card-title {
+    font-size: 30px;
+}

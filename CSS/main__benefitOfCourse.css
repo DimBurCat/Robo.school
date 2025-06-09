@@ -1,0 +1,150 @@
+.main__benefitOfCourse {
+    display: flex;
+    background: var(--bg-light-grey-color);
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.main__benefitOfCourse-main-container {
+    width: 1350px;
+    margin-bottom: 50px;
+}
+
+.main__benefitOfCourse-purpose {
+    font-family: 'Jost';
+    font-size: 50px;
+    line-height: 160%;
+    margin: 0;
+    width: 800px;
+    height: 80px;
+}
+
+.main__benefitOfCourse-accomplishments-list {
+    display: grid;
+    grid-template: auto / repeat(3, 360px);
+    list-style: none;
+    margin-top: 70px;
+    padding: 0;
+    column-gap: 100px;
+}
+
+.main__benefitOfCourse-accomplishments-item__thing {
+    font-family: 'Jost';
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-puple-color);
+}
+
+.main__benefitOfCourse-accomplishments-item__detail {
+    font-family: 'Jost';
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--dark-puple-color);
+}
+
+.main__benefitOfCourse-accomplishments-list-item-practic {
+    display: flex;
+    align-items: baseline;
+    column-gap: 10px;
+    height: 65px;
+}
+
+.main__benefitOfCourse-accomplishments-list-item-practic__icon {
+    position: relative;
+    bottom: 5px;
+}
+
+@media (max-width: 1500px) {
+
+    .main__benefitOfCourse-accomplishments-list {
+        column-gap: 50px;
+        justify-content: center;
+    }
+
+    .main__benefitOfCourse-main-container {
+        width: 1183px;
+    }
+}
+
+@media (max-width: 1220px) {
+
+    .main__benefitOfCourse-purpose {
+        text-align: center;
+        width: 521px;
+        height: 140px;
+        margin: 0 auto;
+    }
+
+    .main__benefitOfCourse-accomplishments-list {
+        grid-template: repeat(2, 250px) / repeat(2, 300px);
+        
+    }
+
+    .practic {
+        justify-content: center;
+        grid-column: span 2;
+        width: 429px;
+        margin: 0 auto;
+    }
+
+    .main__benefitOfCourse-accomplishments-list-item {
+        text-align: center;
+    }
+
+    .main__benefitOfCourse-accomplishments-list-item-practic {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .practic { 
+        grid-column: span 1;
+    }
+
+    .main__benefitOfCourse-accomplishments-list {
+        text-align: center;
+        grid-template: repeat(3, auto) / 450px;
+        margin-top: 40px;
+    }
+    
+    .main__benefitOfCourse-accomplishments-list-item-practic {
+        padding-left: 5.6%;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .main__benefitOfCourse-accomplishments-list { 
+        grid-template: repeat(3, auto) / 300px;
+    }
+
+    .main__benefitOfCourse {
+        padding-top: 40px;
+    }
+
+    .main__benefitOfCourse-purpose {
+        width: 300px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .main__benefitOfCourse-accomplishments-item__thing {
+        font-size: 20px;
+       
+    }
+    
+    .main__benefitOfCourse-accomplishments-item__detail {   
+        font-size: 16px;
+    }
+
+    .main__benefitOfCourse-accomplishments-list-item-practic {
+        padding-left: 10.8%;
+    }
+
+    .practic {
+        width: auto;
+    }
+}

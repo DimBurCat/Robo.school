@@ -1,0 +1,28 @@
+.header__call-button:hover, .header__mainNav-button:hover, .header__mainNav-button-close:hover, .button-moveUp:hover{
+    path {
+        fill: var(--dark-puple-color);
+    }
+
+    line {
+        stroke: var(--dark-puple-color);
+    }
+
+    background: var(--white-color);
+    border: solid 1px var(--dark-puple-color);
+}
+
+.header__Nav-item:hover {
+    box-sizing: border-box;
+    border-width: 3px 0px;
+    border-style: solid;
+    border-color: var(--white-color);
+}
+
+.main__toRequire-button:hover {
+    background: var(--bloodly-red-color);
+}
+
+.main__news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 15px 10px var(--bloodly-red-color);  
+}
