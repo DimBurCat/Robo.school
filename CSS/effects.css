@@ -26,3 +26,8 @@
     transform: translateY(-10px);
     box-shadow: 10px 10px 15px 10px var(--bloodly-red-color);  
 }
+
+.main__form-container__button:hover {
+    background: var(--white-color);
+    color: var(--dark-puple-color);
+}

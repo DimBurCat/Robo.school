@@ -49,6 +49,11 @@
     height: 64px;
 }
 
+.main__form-container__input:invalid {
+    background: var(--bloodly-red-color);
+    color: var(--white-color);
+}
+
 .main__form-container__textarea {
     height: 130px;
     resize: none;
@@ -62,6 +67,14 @@
     color: var(--white-color);
     height: 64px;
     font-size: 18px;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.main__form-container__button:disabled {
+    color: var(--header-button-border-color);
+    background: var(--header-button-color);
+    cursor: auto;
 }
 
 

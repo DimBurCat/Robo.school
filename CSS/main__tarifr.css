@@ -8,8 +8,18 @@
     font-family: 'Jost';
     font-size: 40px;
     line-height: 160%;
-    margin: 50px 0 70px 0;
+    margin: 50px 0 10px 0;
     color: var(--dark-puple-color);
+}
+
+.main__tarifr-description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: 'Jost';
+    width: 1160px;
+    font-size: 30px;
+    margin-bottom: 60px;
 }
 
 .main__tarifr-cards-container {

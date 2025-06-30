@@ -55,32 +55,70 @@
     font-size: 18px;
     line-height: 160%;
     color: var(--red-color);
+    cursor: pointer;
 }
 
-.main__traners__scrollPanel {
+.main__traners-modalWindow {
+    width: 940px;
+    height: 768px;
+    background: var(--white-color);
+    border-radius: 20px;
+}
+
+html:has(.main__traners-modalWindow[open]) {
+    overflow: hidden;
+    .main__traners-modalWindow[open]::backdrop {
+        background: var(--dark-puple-color);
+        opacity: 0.5;
+    }
+}
+
+.main__traners-modalWindow .main__traners-modalWindow__closeBtn {    
+    position: absolute;
+    width: 64px;
+    height: 29px;
+    right: 60px;
+    top: 30px;
+    font-family: 'Jost';
+    font-size: 22px;
+    line-height: 160%;
+    color: var(--dark-puple-color);
+}
+
+.main__traners-modalWindow__closeBtn {
+    cursor: pointer;
+}
+ 
+.main__traners-modalWindow-container {
     display: flex;
-    justify-content: space-between;
-    width: 1270px;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.main__traners__scrollPanel__scrollbar, .main__traners__scrollPanel__scrollbar-progress {
-    height: 5px;
-    border-radius: 40px;
-}
-
-.main__traners__scrollPanel__scrollbar {
-    width: 360px;
-    background: var(--scrollbar-grey-color);  
-}
-
-.main__traners__scrollPanel__scrollbar-progress {  
-    width: 260px;
-    background: var(--dark-puple-color);
-}
-
-.main__traners__scrollPanel__buttons {
+.main__traners-modalWindow__title {
+    margin: 20px 0 0 20px;
     display: flex;
-    column-gap: 15px;
+    gap: 50px;
+    width: fit-content;
+}
+
+.main__traners-modalWindow__title__nickname {
+    font-family: 'Jost';
+    font-size: 42px;
+    line-height: 160%;
+    color: var(--dark-puple-color);
+    margin: 0;
+}
+
+.main__traners-modalWindow__decsription {
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost';
+    font-size: 26px;
+    line-height: 160%;
+    color: var(--dark-puple-color);
+    width: fit-content; 
 }
 
 @media (max-width: 1500px) {

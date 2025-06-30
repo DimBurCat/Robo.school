@@ -6,7 +6,7 @@
 --scrollbar-grey-color: rgba(196, 196, 196, 1);
 --bg-light-grey-color: rgba(246, 246, 246, 1);
 --light-puple-color: #504091;
---header-button-color: rgba(255, 255, 255, 0.1);
---header-button-border-color: rgba(255, 255, 255, 0.3);
+--header-button-color: rgb(83, 83, 83);
+--header-button-border-color: rgb(148, 148, 148);
 --text-line-height-160: 160%;
 }

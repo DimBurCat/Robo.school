@@ -1,6 +1,6 @@
 .events {
     position: relative;
-    background: url(../IMG/battle.gif);
+    background: url(/IMG/battle.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;

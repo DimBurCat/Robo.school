@@ -248,6 +248,22 @@
         </div>
       </section>
       <section class="main__traners" id="traners">
+        <dialog class="main__traners-modalWindow" id="modalWindow">
+          <p class="main__traners-modalWindow__closeBtn" id="tranModalCloseBtn">Закрыть</p>
+          <div class="main__traners-modalWindow-container">
+            <div class="main__traners-modalWindow__title">
+              <img src="IMG/traner_1.png" width="180px"  height="262px" id="modalWindowImg">
+              <h1 class="main__traners-modalWindow__title__nickname" id="modalWindowNickname"></h1>
+            </div>
+            <div class="main__traners-modalWindow__decsription">
+              <p class="noMargin" id="modalWindowdecsription"></p>
+              <p class="noMargin">Санкт-Петербургский политехнический университет Петра Великого<br>
+                Факультет: Компьютерных наук и технологий<br>
+                Специальность: Математика и компьютерные науки<br>
+                Форма обучения: Очная</p>
+            </div>
+          </div>
+        </dialog>
         <div class="main__traners-main-container">
           <div class="main__traners-purpose-container">
             <h2 class="main__traners-purpose text-bold-weight">
@@ -264,7 +280,7 @@
               <p class="main__traners-tranersCards__profession">
                 преподаватель по робототехнике
               </p>
-              <p class="main__traners-tranersCards__aboutTraner">Подробнее</p>
+              <p class="main__traners-tranersCards__aboutTraner" id="1">Подробнее</p>
             </article>
             <article>
               <img
@@ -277,7 +293,7 @@
               <p class="main__traners-tranersCards__profession">
                 преподаватель по робототехнике
               </p>
-              <p class="main__traners-tranersCards__aboutTraner">Подробнее</p>
+              <p class="main__traners-tranersCards__aboutTraner" id="2">Подробнее</p>
             </article>
             <article>
               <img
@@ -290,7 +306,7 @@
               <p class="main__traners-tranersCards__profession">
                 преподаватель по робототехнике
               </p>
-              <p class="main__traners-tranersCards__aboutTraner">Подробнее</p>
+              <p class="main__traners-tranersCards__aboutTraner" id="3">Подробнее</p>
             </article>
             <article>
               <img
@@ -303,7 +319,7 @@
               <p class="main__traners-tranersCards__profession">
                 преподаватель по робототехнике
               </p>
-              <p class="main__traners-tranersCards__aboutTraner">Подробнее</p>
+              <p class="main__traners-tranersCards__aboutTraner" id="4">Подробнее</p>
             </article>
             <article>
               <img
@@ -316,10 +332,11 @@
               <p class="main__traners-tranersCards__profession">
                 преподаватель по программированию
               </p>
-              <p class="main__traners-tranersCards__aboutTraner">Подробнее</p>
+              <p class="main__traners-tranersCards__aboutTraner" id="5">Подробнее</p>
             </article>
           </div>
         </div>
+        
       </section>
       <section class="main__form" id="form">
         <div class="main__form-container">
@@ -331,12 +348,12 @@
               <p>Акция действительна до 24 сентября 2025 года</p>
             </div> 
           </div>
-          <form class="main__form-container__form" method="post">
-            <input class="main__form-container__input" type="text" placeholder="Имя">
-            <input class="main__form-container__input" type="tel" placeholder="Телефон">
-            <input class="main__form-container__input" type="email" placeholder="E-mail">
+          <form class="main__form-container__form" id="form">
+            <input class="main__form-container__input" type="name" placeholder="Имя (1-20 символов)" id="input-name" required>
+            <input class="main__form-container__input" type="tel" placeholder="Телефон +X (XXX) XXX-XX-XX" inputmode="tel" id="input-telNum" required>
+            <input class="main__form-container__input" type="email" placeholder="E-mail" id="input-email" inputmode="email" required>
             <textarea class="main__form-container__textarea" placeholder="Оставьте обратную связь"></textarea>
-            <button class="main__form-container__button" id="btnForm">Оформить заявку</button>
+            <button class="main__form-container__button" id="btnForm" disabled>Оформить заявку</button>
           </form>
         </div>
       </section>
