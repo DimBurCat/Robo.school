@@ -163,6 +163,10 @@ html:has(.main__traners-modalWindow[open]) {
     .main__traners__scrollPanel__buttons {
         display: none;
     }
+
+    .main__traners-modalWindow, .main__traners-modalWindow-container {
+        transform: scale(0.8);
+    }
 }
 
 @media (max-width: 660px) {
@@ -173,6 +177,10 @@ html:has(.main__traners-modalWindow[open]) {
 
     .main__traners {
         padding-top: 70px;
+    }
+
+    .main__traners-modalWindow, .main__traners-modalWindow-container {
+        transform: scale(0.6);
     }
 }
 
@@ -193,5 +201,9 @@ html:has(.main__traners-modalWindow[open]) {
     
     .main__traners-purpose {   
         font-size: 30px;  
+    }
+
+    .main__traners-modalWindow, .main__traners-modalWindow-container {
+        transform: scale(0.5);
     }
 }
